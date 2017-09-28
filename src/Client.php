@@ -115,6 +115,16 @@ class Client
     }
 
     /**
+     * Get connection
+     *
+     * @return bool|resource
+     */
+    public function getConnection()
+    {
+        return $this->connection;
+    }
+
+    /**
      * Determine if connection was established and connect if not.
      *
      * @throws ConnectionFailedException
